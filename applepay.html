@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Оплати Apple Pay — Облік</title>
+<style>
+:root{color-scheme:light dark;--bg:#fff;--text:#1c1c1e;--muted:#6b6b70}
+@media (prefers-color-scheme:dark){:root{--bg:#111113;--text:#f2f2f4;--muted:#9a9aa0}}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.5 -apple-system,system-ui,sans-serif}
+main{max-width:40rem;margin:0 auto;padding:2rem 1rem 4rem}
+h1{font-size:1.8rem} .muted{color:var(--muted)}
+ol{padding-left:1.4rem} li{margin:0 0 2rem}
+img{display:block;width:100%;max-width:20rem;height:auto;margin:.6rem 0 0;border-radius:1rem;border:1px solid var(--muted)}
+a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+<h1>Оплати Apple Pay в «Обліку»</h1>
+<p class="muted">Для iOS 27, застосунок «Швидкі команди» українською. Налаштовується один раз.</p>
+<p>iOS не дозволяє застосунку створити автоматизацію за вас, тож це робиться в «Швидких командах». Після цього кожна оплата карткою з Гаманця сама з’являється в «Обліку».</p>
+<ol>
+<li><p>Відкрийте «Швидкі команди» і перейдіть на «Автоматизація». Торкніться кнопки «Нова команда».</p><img src="applepay/01-avtomatyzatsiya.png" alt="Відкрийте «Швидкі команди» і перейдіть на «Автоматизація». Торкніться кнопки «Нова команда»." loading="lazy"></li>
+<li><p>У нижній панелі торкніться «Автоматизація», щоб побачити тригери.</p><img src="applepay/02-nova-komanda.png" alt="У нижній панелі торкніться «Автоматизація», щоб побачити тригери." loading="lazy"></li>
+<li><p>Знайдіть «Гаманець» («Коли я підношу картку з Гаманця») і торкніться його.</p><img src="applepay/03-trigger-hamanets.png" alt="Знайдіть «Гаманець» («Коли я підношу картку з Гаманця») і торкніться його." loading="lazy"></li>
+<li><p>Торкніться стрілки біля «Будь-яка картка». «Категорії» й «Продавці» лишіть як є, «Автоматизація» ввімкнено, «Сповіщати» вимкнено.</p><img src="applepay/04-parametry-triggera.png" alt="Торкніться стрілки біля «Будь-яка картка». «Категорії» й «Продавці» лишіть як є, «Автоматизація» ввімкнено, «Сповіщати» вимкнено." loading="lazy"></li>
+<li><p>У пошуку внизу введіть «оплат» і оберіть дію «Записати оплату» з «Обліку».</p><img src="applepay/05-poshuk-diyi.png" alt="У пошуку внизу введіть «оплат» і оберіть дію «Записати оплату» з «Обліку»." loading="lazy"></li>
+<li><p>Дія додана. Тепер заповніть її поля: «Сума», «Продавець» і «Картка».</p><img src="applepay/06-diya-dodana.png" alt="Дія додана. Тепер заповніть її поля: «Сума», «Продавець» і «Картка»." loading="lazy"></li>
+<li><p>Торкніться поля, наприклад «Сума». Над клавіатурою з’явиться «Вибрати змінну».</p><img src="applepay/07-pole-vybraty-zminnu.png" alt="Торкніться поля, наприклад «Сума». Над клавіатурою з’явиться «Вибрати змінну»." loading="lazy"></li>
+<li><p>Оберіть «Трансакція» (це змінна з даними платежу).</p><img src="applepay/08-spysok-zminnykh.png" alt="Оберіть «Трансакція» (в оплат Apple Pay це змінна з даними платежу)." loading="lazy"></li>
+<li><p>Торкніться змінної «Трансакція» і в розділі «Отримати» оберіть властивість: для суми — «Сума», для продавця — «Продавець», для картки — «Картка». Потім «Повернути».</p><img src="applepay/09-vlastyvosti-transaktsii.png" alt="Торкніться змінної «Трансакція» і в розділі «Отримати» оберіть властивість: для суми — «Сума», для продавця — «Продавець», для картки — «Картка». Потім «Повернути»." loading="lazy"></li>
+<li><p>Повторіть для решти полів. Готово: після кожної оплати Apple Pay запис з’являтиметься в «Обліку».</p><img src="applepay/10-hotovo.png" alt="Повторіть для решти полів. Готово: після кожної оплати Apple Pay запис з’являтиметься в «Обліку»." loading="lazy"></li>
+</ol>
+<p class="muted">Картки з банком, підключеним в «Обліку», теж підходять: оплата склеїться з випискою без дубля. Питання: <a href="mailto:inbox.heiko@icloud.com">inbox.heiko@icloud.com</a>.</p>
+</main>
+</body>
+</html>
