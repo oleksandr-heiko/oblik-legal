@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Подякувати — Облік</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f2fa;--card:#fff;--text:#1c1c1e;--muted:#6b6b70;--accent:#1c1c1e;--onaccent:#fff;
+--glow1:#d9d4f2;--glow2:#f6e7c8}
+@media (prefers-color-scheme:dark){:root{--bg:#0f0e14;--card:#1b1a22;--text:#f2f2f4;--muted:#9a9aa0;--accent:#f2f2f4;--onaccent:#111;
+--glow1:#2e2a4a;--glow2:#3a3122}}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--text);font:17px/1.5 -apple-system,system-ui,sans-serif;
+background:radial-gradient(120% 60% at 50% 0%,var(--glow1),transparent 70%),radial-gradient(90% 50% at 80% 100%,var(--glow2),transparent 70%),var(--bg)}
+main{max-width:28rem;margin:0 auto;padding:max(3rem,env(safe-area-inset-top)) 1rem 3rem;text-align:center}
+.icon{width:112px;height:112px;border-radius:26px;box-shadow:0 12px 40px rgba(60,50,120,.25)}
+h1{font-size:1.9rem;line-height:1.2;margin:1.5rem 0 .5rem}
+.lead{color:var(--muted);margin:0 0 2rem}
+.card{background:var(--card);border-radius:22px;padding:1.25rem 1.25rem 1.5rem;text-align:left;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.card ul{list-style:none;margin:0;padding:0}
+.card li{display:flex;gap:.75rem;padding:.55rem 0}
+.card li span:first-child{font-size:1.3rem;line-height:1.4}
+.btn{display:block;margin:2rem 0 .75rem;padding:1rem;border-radius:16px;background:var(--accent);color:var(--onaccent);
+font-weight:600;font-size:1.1rem;text-decoration:none}
+.btn:active{opacity:.8}
+.muted{color:var(--muted);font-size:.95rem}
+a.plain{color:inherit}
+</style>
+</head>
+<body>
+<main>
+<img class="icon" src="icon.png" alt="" onerror="this.style.display='none'">
+<h1>Дякую, що користуєтесь Обліком 💛</h1>
+<p class="lead">Облік безкоштовний — без реклами, підписок і закритих функцій. І таким лишиться.</p>
+<div class="card">
+<ul>
+<li><span>🍎</span><span>Щороку треба платити Apple за акаунт розробника — без нього Обліку не буде в App Store.</span></li>
+<li><span>🛠</span><span>Нові функції, виправлення й підтримка — це вечори роботи.</span></li>
+<li><span>🔒</span><span>Ваших даних ми не бачимо й не продаємо — тому інших доходів у Обліку немає.</span></li>
+</ul>
+</div>
+<a class="btn" href="https://send.monobank.ua/jar/8gHK2GvUfX">Закинути на банку</a>
+<p class="muted">Банка monobank «На розвиток Обліку». Будь-яка сума — це вже дуже багато. Видно, скільки зібрали.</p>
+<p class="muted" style="margin-top:2.5rem">Питання й побажання: <a class="plain" href="mailto:inbox.heiko@icloud.com">inbox.heiko@icloud.com</a> · <a class="plain" href="support.html">Підтримка</a></p>
+</main>
+</body>
+</html>
